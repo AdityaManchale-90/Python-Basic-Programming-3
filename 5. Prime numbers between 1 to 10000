@@ -1,0 +1,15 @@
+# 5. Write a Python Program to Print all Prime Numbers in an Interval of 1-10000?
+
+# This program is to print all the prime numbers between 1-10000.
+
+n1 = 2
+n2 = 10000
+
+print("Prime numbers between 1 to 10000 are: ")
+
+for num in range(n1, n2 + 1):
+    for i in range(2, num):
+        if (num % i) == 0:
+            break
+    else:
+        print(num)
