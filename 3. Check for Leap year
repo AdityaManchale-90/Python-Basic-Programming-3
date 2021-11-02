@@ -1,0 +1,15 @@
+# 3. Write a Python Program to Check Leap Year?
+
+# This program is written to get input from user and return the Year is leap year or not.
+
+n = int(input("Enter an Year in YYYY format: "))
+if n%4 == 0:
+    if n%100 == 0:
+        if n%400 == 0:
+            print("{} Year is a Leap year.".format(n))
+        else:
+            print("{} Year is not a Leap year.".format(n))
+    else:
+        print("{} Year is a Leap year.".format(n))
+else:
+    print("{} Year is not a Leap year.".format(n))
